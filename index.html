@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Форма обратной связи</title>
+   
+</head>
+<body>
+        <div class="feedback">
+            <h2 class="feedback__title">Задать вопрос</h2>
+            <form class="feedback__form" method="POST" name="feedback-form">
+                <input type="text" class="feedback__form-title form-title_fullname" placeholder="Фамилия Имя Отчество *" name="fullname" required onkeypress="noDTx(event)">
+                <input type="tel" class="feedback__form-title form-title_phone" placeholder="Телефон *" name="phone" id="tel" onkeypress="noTx(event)" title="Введите телефон в формате +7-932-432-23-23" maxlength="18" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                <input type="email" class="feedback__form-title form-title_email" placeholder="Email" name="email"onkeypress="noTxr(event)"> 
+                <button class="feedback__form-button">Отправить запрос</button></form>
+        </div>
+<script type="text/javascript" src="/script/js.js"></script>
+</body>
